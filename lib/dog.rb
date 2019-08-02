@@ -6,7 +6,7 @@ class Dog
   def initialize(hash)
     #binding.pry
     hash.each do |k,v|
-      dog.send("#{k}=", v)
+      self.send("#{k}=", v)
     end
     # @id = hash[:id]
     # @name = hash[:name]
