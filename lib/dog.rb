@@ -46,6 +46,7 @@ class Dog
     hash.each do |k,v|
       dog.send("#{k}=", v)
     end
+    dog.save
   end
 
 end
