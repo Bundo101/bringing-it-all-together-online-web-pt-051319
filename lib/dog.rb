@@ -41,7 +41,7 @@ class Dog
     self
   end
 
-  def create(hash)
+  def self.create(hash)
     dog = Dog.new
     hash.each do |k,v|
       dog.send("#{k}=", v)
