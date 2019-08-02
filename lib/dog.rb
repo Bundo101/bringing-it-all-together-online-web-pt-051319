@@ -5,7 +5,7 @@ class Dog
 
   def initialize(hash)
     #binding.pry
-    @id = hash[0]
+    @id = hash[:id]
     @name = hash[:name]
     @breed = hash[:breed]
   end
