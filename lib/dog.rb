@@ -5,9 +5,12 @@ class Dog
 
   def initialize(hash)
     #binding.pry
-    @id = hash[:id]
-    @name = hash[:name]
-    @breed = hash[:breed]
+    hash.each do |k,v|
+      dog.send("#{k}=", v)
+    end
+    # @id = hash[:id]
+    # @name = hash[:name]
+    # @breed = hash[:breed]
   end
 
   def self.create_table
