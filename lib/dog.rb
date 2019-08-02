@@ -43,7 +43,7 @@ class Dog
 
   def create(hash)
     dog = Dog.new
-    hash.each do |k,v| 
+    hash.each do |k,v|
       dog.send("#{k}=", v)
     end
   end
