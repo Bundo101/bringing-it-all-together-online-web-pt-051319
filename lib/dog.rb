@@ -4,6 +4,7 @@ class Dog
   attr_reader :id
 
   def initialize(hash)
+    binding.pry 
     @id = hash[0]
     @name = hash[1]
     @breed = hash[2]
